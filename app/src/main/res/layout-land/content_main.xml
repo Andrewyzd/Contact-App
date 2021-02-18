@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <fragment
+            android:id="@+id/contactList_landscape"
+            android:name="com.example.cet3013_assignment2_contactapp.contactList_Fragment"
+            android:layout_width="259dp"
+            android:layout_height="367dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="8dp"
+            tools:layout="@layout/fragment_contact_list" />
+
+        <fragment
+            android:id="@+id/contactDetails_landscape"
+            android:name="com.example.cet3013_assignment2_contactapp.detailsDisplay_Fragment"
+            android:layout_width="451dp"
+            android:layout_height="369dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginBottom="8dp"
+            tools:layout="@layout/fragment_details_display" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

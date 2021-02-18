@@ -1,0 +1,2 @@
+rootProject.name='CET3013_Assignment2_ContactApp'
+include ':app'

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">CET3013_Assignment2_ContactApp</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments details entering for navigation -->
+    <string name="familyName">Family Name</string>
+    <string name="firstName">First Name</string>
+    <string name="houseNumber">House Number</string>
+    <string name="street">Street</string>
+    <string name="town">Town</string>
+    <string name="country">Country</string>
+    <string name="postcode">Postcode</string>
+    <string name="telephoneNumber">Telephone Number</string>
+    <string name="nameCard">Name Card</string>
+    <string name="save">Save</string>
+    <string name="remove">Remove</string>
+    <string name="edit">Edit</string>
+    <string name="saveChange">Save Change</string>
+    <string name="createContact">Create Contact</string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

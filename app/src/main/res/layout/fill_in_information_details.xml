@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/familyName_input"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:hint="@string/familyName"
+        android:inputType="textPersonName"
+        android:textColor="#918B8B"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/firstName_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nameIcon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/nameIcon"
+        android:layout_width="51dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginBottom="91dp"
+        android:src="@drawable/name_icon"
+        app:layout_constraintBottom_toTopOf="@+id/addressIcon"
+        app:layout_constraintEnd_toStartOf="@+id/familyName_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/firstName_input"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="@string/firstName"
+        android:inputType="textPersonName"
+        android:textColor="#918B8B"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/houseNumber_input"
+        app:layout_constraintEnd_toEndOf="@+id/familyName_input"
+        app:layout_constraintStart_toEndOf="@+id/nameIcon"
+        app:layout_constraintTop_toBottomOf="@+id/familyName_input" />
+
+    <EditText
+        android:id="@+id/houseNumber_input"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="@string/houseNumber"
+        android:inputType="textPersonName"
+        android:textColor="#918B8B"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/street_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/addressIcon"
+        app:layout_constraintTop_toBottomOf="@+id/firstName_input" />
+
+    <ImageView
+        android:id="@+id/addressIcon"
+        android:layout_width="51dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="266dp"
+        android:src="@drawable/address"
+        app:layout_constraintBottom_toTopOf="@+id/phoneIcon"
+        app:layout_constraintEnd_toStartOf="@+id/houseNumber_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameIcon" />
+
+    <EditText
+        android:id="@+id/town_input"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:hint="@string/town"
+        android:inputType="textPersonName"
+        android:textColor="#918B8B"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/country_input"
+        app:layout_constraintEnd_toEndOf="@+id/country_input"
+        app:layout_constraintStart_toStartOf="@+id/country_input"
+        app:layout_constraintTop_toBottomOf="@+id/street_input" />
+
+    <EditText
+        android:id="@+id/country_input"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:hint="@string/country"
+        android:inputType="textPersonName"
+        android:textColor="#918B8B"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/postcode_input"
+        app:layout_constraintEnd_toEndOf="@+id/postcode_input"
+        app:layout_constraintStart_toStartOf="@+id/postcode_input"
+        app:layout_constraintTop_toBottomOf="@+id/town_input" />
+
+    <EditText
+        android:id="@+id/postcode_input"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="29dp"
+        android:ems="10"
+        android:hint="@string/postcode"
+        android:inputType="textPersonName"
+        android:textColor="#918B8B"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/telephoneNumber_input"
+        app:layout_constraintEnd_toEndOf="@+id/telephoneNumber_input"
+        app:layout_constraintStart_toStartOf="@+id/telephoneNumber_input"
+        app:layout_constraintTop_toBottomOf="@+id/country_input" />
+
+    <EditText
+        android:id="@+id/street_input"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="9dp"
+        android:ems="10"
+        android:hint="@string/street"
+        android:inputType="textPersonName"
+        android:textColor="#918B8B"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/town_input"
+        app:layout_constraintEnd_toEndOf="@+id/town_input"
+        app:layout_constraintStart_toStartOf="@+id/town_input"
+        app:layout_constraintTop_toBottomOf="@+id/houseNumber_input" />
+
+    <EditText
+        android:id="@+id/telephoneNumber_input"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="192dp"
+        android:ems="10"
+        android:hint="@string/telephoneNumber"
+        android:inputType="textPersonName"
+        android:textColor="#918B8B"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/phoneIcon"
+        app:layout_constraintTop_toBottomOf="@+id/postcode_input" />
+
+    <ImageView
+        android:id="@+id/phoneIcon"
+        android:layout_width="51dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="192dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/telephoneNumber_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addressIcon"
+        app:srcCompat="@drawable/phone_number" />
+</androidx.constraintlayout.widget.ConstraintLayout>
